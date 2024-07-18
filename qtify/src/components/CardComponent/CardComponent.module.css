@@ -1,0 +1,25 @@
+/* .chip {
+  background-color: var(--color-black);
+}
+.card {
+  width: -fit-content;
+}
+.card button {
+  display: block;
+}
+
+.cardContent {
+  display: flex;
+  padding: 0.2rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+.title {
+  margin-top: 1rem;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 85%;
+  font-size: 0.9rem;
+} */
