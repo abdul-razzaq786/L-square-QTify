@@ -1,10 +1,10 @@
 import * as React from "react";
-import Paper from "@mui/material/Paper";
-import InputBase from "@mui/material/InputBase";
-import IconButton from "@mui/material/IconButton";
+// import Paper from "@mui/material/Paper";
+// import InputBase from "@mui/material/InputBase";
+// import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import styles from "./Search.module.css";
-import Autocomplete from "@mui/material/Autocomplete";
+// import Autocomplete from "@mui/material/Autocomplete";
 import { useNavigate } from "react-router-dom";
 import { styled } from "@mui/system";
 import { useAutocomplete } from "@mui/material";
@@ -52,7 +52,6 @@ const Listbox = styled("ul")(
 export default function Search({ placeholder, searchData }) {
   const {
     getRootProps,
-    getInputLabelProps,
     getInputProps,
     getListboxProps,
     getOptionProps,
@@ -95,7 +94,8 @@ export default function Search({ placeholder, searchData }) {
           {groupedOptions.map((option, index) => {
             const artists = option.songs.reduce((acc, currentVal) => {
               acc.push(...currentVal.artists);
-            }, []);
+            return acc;
+          }, []);
             return (
               <li {...getOptionProps({ option, index })}>
                 <div>
