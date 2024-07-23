@@ -79,7 +79,7 @@ export default function Search({ placeholder, searchData }) {
           <input
             name="album"
             className={styles.searchInput}
-            placeholder={placeholder}
+            placeholder="Search a album of your choice"
             {...getInputProps()}
           />
         </div>

@@ -13,7 +13,7 @@ const Navbar = ({searchData}) => {
     <Link to="/">
   <Logo />
   </Link>
-  <Search placeholder={"Search a new song of your choice"}
+  <Search placeholder={"Search a album of your choice"}
   searchData={searchData}/>
   <Feedback/>
   </Box>
