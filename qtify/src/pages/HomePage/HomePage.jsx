@@ -7,21 +7,21 @@ const HomePage = () => {
 //   const { data } = useOutletContext();
 //   const { topAlbums = [], newAlbums = [], songs = [] } = data;
 
-  return (
-    <>
-      <HeroSection />
-      {/* <div className={styles.cardSection}>
-        <CardCarousel title="Top Albums" data={topAlbums} type="album" />
-        <CardCarousel title="New Albums" data={newAlbums} type="album" />
-        <CardCarousel
-          title="Songs"
-          filterSource={fetchFilters}
-          data={songs}
-          type="songs"
-        />
-      </div> */}
-    </>
-  );
-};
+//   return (
+//     <>
+//       <HeroSection />
+//       <div className={styles.cardSection}>
+//         <CardCarousel title="Top Albums" data={topAlbums} type="album" />
+//         <CardCarousel title="New Albums" data={newAlbums} type="album" />
+//         <CardCarousel
+//           title="Songs"
+//           filterSource={fetchFilters}
+//           data={songs}
+//           type="songs"
+//         />
+//       </div>
+//     </>
+//   );
+// };
 
 export default HomePage;
