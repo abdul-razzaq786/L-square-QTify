@@ -1,4 +1,4 @@
-/* .chip {
+.chip {
   background-color: var(--color-black);
 }
 .card {
@@ -22,4 +22,4 @@
   display: block;
   width: 85%;
   font-size: 0.9rem;
-} */
+}
