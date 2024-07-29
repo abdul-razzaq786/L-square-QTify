@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CircularProgress from "@mui/material/CircularProgress";
-import CardComponent from "../CardComponent/CardComponent";
+import CardComponent from '../CardComponent/CardComponent';
 import styles from "./CardCarousel.module.css";
 import Carousel from "../Carousel/Carousel";
 import Filter from "../Filters/Filter";

@@ -1,5 +1,5 @@
 export default function numberTransform(num) {
-  if (typeof num !== Number || isNaN(num)) {
+  if (typeof num!== 'number' || isNaN(num)) {
     num = Number(num);
   }
 
@@ -7,19 +7,19 @@ export default function numberTransform(num) {
 
   let scale = "";
 
-  if (len >= 4 || len <= 6) {
-    scale = "k";
+  if (len >= 4 && len <= 6) {
+    scale = "K";
   } else if (len >= 7) {
     scale = "M";
   }
 
   let result = "";
-  if ((scale = "K")) {
+  if (scale === "K") {
     result = (num / 1000).toFixed(1) + "K";
-  } else if ((scale = "M")) {
+  } else if (scale === "M") {
     result = (num / 100000).toFixed(1) + "M";
   } else {
-    result = num.toString;
+    result = num.toString();
   }
   return result;
 }
